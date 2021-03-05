@@ -1,0 +1,5 @@
+git status
+git add . 
+git add practica5.html
+git commit -m "practica5"
+git push origin master
