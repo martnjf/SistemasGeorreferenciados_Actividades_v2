@@ -1,0 +1,56 @@
+<!-- ***************************** FETCH 3 ********************************************-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch 3</title>
+</head>
+<body>
+   <div id="map"></div> 
+   <script>
+
+        var coordenadas  = {
+            lat: 0,
+            lng: 0
+        }; 
+
+        var propiedades = {
+            center: coordenadas,
+            zoom: 2 
+        }
+        function obtieneMarcadores(){
+            const markers = [
+                {
+	                name: "Mexico",
+	                longitude:"-99.1276",
+                    latitude:"19.427"
+                }, {
+	                name: "Japan",
+	                longitude:"139.839478",
+                    latitude:"35.652832"
+                }, {
+	                name: "Spain",
+	                longitude:"-3.7881",
+                    latitude:"40.4167"
+                }
+            ];
+            return markers;       
+       };
+        function iniciaMapa(){
+            const map = google.maps.Map(document.getElementById('map'),propiedades);
+            const marcadores = obtieneMarcadores();
+
+            for(propiedad of marcadores){
+                let marker =  new.google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(marcador.latitude, marcador.longitude),
+                    title: marcador.name
+                });
+            }
+        };
+   </script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv-m46ebIV9fqkE2fIBGeWunmGmBm2R24&callback=iniciaMapa" async defer></script>
+</body>
+</html>
