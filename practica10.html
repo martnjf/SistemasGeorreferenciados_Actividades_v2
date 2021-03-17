@@ -10,12 +10,14 @@
         #map {
         height: 100%;
         }
+    
         html, body {
         height: 100%;
         margin: 0;
         padding: 0;
         }
     </style>
+
     </head>
 
     <body>
@@ -35,12 +37,13 @@
         }
 
     function iniciaMapa() {
-    fetch('paises.json')
+    fetch('https://sistemasgeo.com/fetch/paises.json')
     .then(function(response) {
 
         response.json().then(function(datos) {
 
             const map = new google.maps.Map(document.getElementById('map'), propiedades);
+
 
             datos.forEach( marcador => {
 
@@ -56,7 +59,7 @@
                     registro.country +"Casos: " + 
                     registro.cases +"Casos de Hoy: " + 
                     registro.todayCases +"Activos: " + 
-                    registro.active + registro.cases +"Muertes:  " + 
+                    registro.active + registro.cases +"Muertes: " + 
                     registro.deaths +"Pruebas: " + 
                     registro.tests;
                     var infowindow = new google.maps.InfoWindow({
