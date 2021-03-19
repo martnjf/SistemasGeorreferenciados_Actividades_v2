@@ -40,15 +40,19 @@ function iniciaMapa() {
     var marcadores = [];
     var cuenta = 1;
     localidades.forEach( localidad => {
+
         console.log(localidad);
+
         let marcador = new google.maps.Marker({
-            map: map,
+            map : map,
             position: localidad,
-            //label: 'X'
-            label: labels [ cuenta % labels.lenght]
+            label: labels[ cuenta % labels.length ]
         });
+
         marcadores.push(marcador);
+
         cuenta++;
+
     });
     var makerCluster = new MarkerClusterer(map, marcadores, {
         imagePath : 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m',
