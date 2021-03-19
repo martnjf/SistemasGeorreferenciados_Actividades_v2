@@ -38,7 +38,7 @@ function iniciaMapa() {
     );
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     var marcadores = [];
-
+    var cuenta = 1;
     localidades.forEach( localidad => {
         console.log(localidad);
         let marcador = new google.maps.Marker({
