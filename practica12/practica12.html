@@ -1,4 +1,4 @@
-<!-- #7 en el video -->
+<!-- #8 en el video -->
 <!-- Martín Jasso Flores -->
 <!doctype html>
 <html lang="en">
@@ -24,48 +24,51 @@
         <a class="navbar-brand" href="#">
           <img src="https://utz.org/wp-content/uploads/2017/04/Globe_America_white-700x700.png" width="30" height="30" class="d-inline-block align-top" alt="">
           <hr>
-          Practica 7 Martín Jasso Flores
+          Practica 8 Martín Jasso Flores
         </a>
       </nav>
   </header>
   <body >
-    <div class="container-fluid bg-light py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 text-center">
-                    <div id="mapa"></div>
-                </div>
-                <div class="col-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 text-center">
-                    <div class="row">
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light" id="btnroadmap">Caminos</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light" id="btnsatellite">Satélite</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light" id="btnhybrid">Híbrido</button>
-                        </div>
-                        <div class="col-3">
-                            <button type="button" class="btn btn-light" id="btnterrain">Terreno</button>
-                        </div>
+    <form action="">
+        <div class="container-fluid bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4 text-center">
+                        <h2> Google Maps idiomas</h2>
                     </div>
+                    <div class="col-4 text-center">
+                        <select onchange="this.form.submit()" name="idioma" id="idioma" style="background-color:#596e5c;" class="form-select form-control" aria-label="Default select example">
+                            <option selected>Languages</option>
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
+                            <option value="it">Italiano</option>
+                            <option value="zh">普通話</option>
+                            <option value="ja">日本語</option>
+                            <option value="ger">Deutsche</option>
+                            <option value="pt">Português</option>
+                            <option value="ar">عرب</option>
+                        </select>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
-                <div class="col-2"></div>
             </div>
         </div>
-    </div>
-    <script src="./script11.js"/>
+        <div class="container-fluid bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div id="mapa"></div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="./script12.js"/>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv-m46ebIV9fqkE2fIBGeWunmGmBm2R24&callback=iniciaMapa" async defer></script>
   </body>
 </html>
