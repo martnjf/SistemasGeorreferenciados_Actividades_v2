@@ -269,7 +269,7 @@ function iniciaMapa(){
         
     };
 
-    var mapa = document.getElementById("map");
+    var mapa = document.getElementById("mapa");
 
     var map = new google.maps.Map(mapa, propiedades);
 
