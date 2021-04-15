@@ -1,0 +1,80 @@
+<!-- #11 en el video -->
+<!-- Martín Jasso Flores -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Creando estilo de mapas</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <style>
+            html, body{
+                margin: 0px;  
+                padding: 0px;
+            }
+            #mapa1,#mapa2,#mapa3,#mapa4,#mapa5,#mapa6 {
+                width: 100%;
+                height: 700px;
+            } 
+        </style>
+    </head>
+    <header>
+        <nav class="navbar navbar-light" style="background-color:#1d2c4d; color: #8ec3b9;">
+            <a class="navbar-brand" href="#">
+            <img src="https://utz.org/wp-content/uploads/2017/04/Globe_America_white-700x700.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            Practica 11/15 Martín Jasso Flores
+            </a>
+        </nav>
+    </header>
+    <body >
+        <div class="container-fluid m-3 text-center" style="background-color:#1d2c4d;">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Controles de Mapa </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div id="mapa1"></div>
+                    <p>Mapa con controles estándar</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="mapa2"></div>
+                    <p>Mapa sin controles</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div id="mapa3"></div>
+                    <p>Mapa con zoom desactivado</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="mapa4"></div>
+                    <p>Mapa con ControlOptions</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div id="mapa5"></div>
+                    <p>Mapa con Control Potition</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div id="mapa6"></div>
+                    <p>Mapa con Restricting MapBounds</p>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-light text-center text-lg-start">
+            <div class="text-center p-3" style="background-color:#1d2c4d; color: #ffffff;">
+              Repositorio 
+              <a class="text-dark" href="https://github.com/martnjf/sistemasgeo2">Sistemas Georeferenciados</a>
+            </div>
+        </footer>
+    <script src="./script15.js"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv-m46ebIV9fqkE2fIBGeWunmGmBm2R24&callback=iniciaMapa" async defer></script>
+  </body>
+</html>
